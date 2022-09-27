@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.25" height="27.803" viewBox="0 0 43.25 27.803">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(-2 -7)">
+    <path id="Path_79" data-name="Path 79" d="M40.616,34.8H6.634A4.634,4.634,0,0,1,2,30.169V11.634A4.634,4.634,0,0,1,6.634,7H40.616a4.634,4.634,0,0,1,4.634,4.634V30.169A4.634,4.634,0,0,1,40.616,34.8ZM6.634,10.089a1.545,1.545,0,0,0-1.545,1.545V30.169a1.545,1.545,0,0,0,1.545,1.545H40.616a1.545,1.545,0,0,0,1.545-1.545V11.634a1.545,1.545,0,0,0-1.545-1.545Z" transform="translate(0 0)" fill="#625ba2"/>
+    <g id="Group_38" data-name="Group 38" transform="translate(8.179 14.881)">
+      <path id="Path_80" data-name="Path 80" d="M9.089,15H7.545a1.545,1.545,0,1,0,0,3.089H9.089a1.545,1.545,0,1,0,0-3.089Z" transform="translate(-6 -10.524)" fill="#ff923e"/>
+      <path id="Path_81" data-name="Path 81" d="M26.089,15H24.545a1.545,1.545,0,1,0,0,3.089h1.545a1.545,1.545,0,0,0,0-3.089Z" transform="translate(3.259 -10.524)" fill="#ff923e"/>
+      <circle id="Ellipse_16" data-name="Ellipse 16" cx="6.09" cy="6.09" r="6.09" transform="translate(9.584 0)" fill="#ff923e"/>
+    </g>
+  </g>
+</svg>

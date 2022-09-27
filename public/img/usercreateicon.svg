@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.995" height="68" viewBox="0 0 67.995 68">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1f1f1f"/>
+      <stop offset="1" stop-color="#535353"/>
+    </linearGradient>
+  </defs>
+  <g id="account-manager" transform="translate(-1 -1)">
+    <path id="Path_2" data-name="Path 2" d="M47.8,32.63A2.267,2.267,0,0,1,45.531,34.9H9.267A2.266,2.266,0,0,1,7,32.63v0a16.208,16.208,0,0,1,16.21-16.21h8.377A16.208,16.208,0,0,1,47.8,32.628Zm-4.755-2.267a11.676,11.676,0,0,0-11.455-9.413H23.21a11.676,11.676,0,0,0-11.455,9.413Z" transform="translate(7.599 19.527)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_3" data-name="Path 3" d="M21.942,6A10.636,10.636,0,1,0,32.577,16.634,10.64,10.64,0,0,0,21.942,6Zm0,4.533a6.1,6.1,0,1,1-6.1,6.1,6.1,6.1,0,0,1,6.1-6.1Z" transform="translate(13.055 6.333)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_4" data-name="Path 4" d="M31.964,39.437a34.031,34.031,0,0,0,0-29.143,2.266,2.266,0,1,0-4.093,1.945,29.511,29.511,0,0,1,0,25.254,2.266,2.266,0,1,0,4.093,1.945Z" transform="translate(33.754 10.132)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_5" data-name="Path 5" d="M8.371,37.492a29.511,29.511,0,0,1,0-25.254,2.266,2.266,0,1,0-4.093-1.945,34.031,34.031,0,0,0,0,29.143,2.266,2.266,0,1,0,4.093-1.945Z" transform="translate(0 10.132)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_6" data-name="Path 6" d="M12.239,8.371a29.511,29.511,0,0,1,25.254,0,2.266,2.266,0,1,0,1.945-4.093,34.031,34.031,0,0,0-29.143,0,2.266,2.266,0,1,0,1.945,4.093Z" transform="translate(10.132 0)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_7" data-name="Path 7" d="M10.294,31.966a34.031,34.031,0,0,0,29.143,0,2.266,2.266,0,1,0-1.945-4.093,29.511,29.511,0,0,1-25.254,0,2.266,2.266,0,1,0-1.945,4.093Z" transform="translate(10.132 33.756)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
