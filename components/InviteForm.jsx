@@ -9,11 +9,11 @@ import DispatchContext from '../context/DispatchContext';
 import AppStateContext from '../context/AppStateContext';
 
 
-const InviteForm = () => {
+const InviteForm = ({ buttonText = "Gönder", formContainerStyle = {} }) => {
 
 
     const [countryCode, setCountryCode] = React.useState();
-    const { alertsDispatch, modalDispatch } = React.useContext(DispatchContext);
+    const { modalDispatch } = React.useContext(DispatchContext);
     const { localeContext } = React.useContext(AppStateContext);
 
     const { mutate, isLoading } = useMutation(SendForm, {
@@ -50,9 +50,6 @@ const InviteForm = () => {
 
     const { register, handleSubmit, control, watch, formState: { errors } } = useForm();
 
-    const text = `Denemeye başla butonuna tıklayarak GCM'den elektronik ileti almayı, kullanım koşullarını, kişisel verilerin
-    işlenmesine ilişkin aydınlatma metni ve izin Formu'nu kabul ediyorum.`
-
     const onSubmit = data => {
         mutate({ ...data, countryCode: countryCode });
     };
@@ -60,30 +57,41 @@ const InviteForm = () => {
 
     return (
 
-        <div className="form_area">
-            <form>
-                <div className="item">
-                    <input {...register("name", { required: true, min: 1 })} placeholder="Adınız Soyadınız" autoComplete="off" />
-                    <FormError condition={errors.name}>This field is required</FormError>
+        <div className="formdetail" style={formContainerStyle}>
+            <div className="row">
+                <div className="col-md-12">
+                    <div className="formitem">
+                        <label>Adınız</label>
+                        <input {...register("name", { required: true, min: 1 })} placeholder="Adınız Soyadınız" autoComplete="off" />
+                        <FormError condition={errors.name}>This field is required</FormError>
+                    </div>
                 </div>
-                <div className="item">
-                    <input {...register("email", { required: true, min: 1 })} placeholder="E-posta" autoComplete="off" />
-                    <FormError condition={errors.email}>This field is required</FormError>
-                </div>
-                <div className="item">
-                    {/* <input  {...register("phone", { required: true, min: 1 })} placeholder="Telefon" autoComplete="off" /> */}
-                    <PhoneInputWithCountry international={true} limitMaxLength={true} defaultCountry={countryCode} onCountryChange={code => setCountryCode(code)} style={{ background: "#0D1C29" }} control={control} rules={{ required: true }} name="phone" placeholder={"Telefon"} />
-                    <FormError condition={errors.phone}>This field is required</FormError>
-                </div>
-                <span>
-                    {text}
-                </span>
+                <div className="col-md-12">
+                    <div className="formitem">
+                        <label>E-posta</label>
+                        <input {...register("email", { required: true, min: 1 })} placeholder="E-posta" autoComplete="off" />
 
-                <PrimaryButton onClick={handleSubmit(onSubmit)}>
-                    Denemeye Başla
-                </PrimaryButton>
-            </form>
+                        <FormError condition={errors.email}>This field is required</FormError>
+
+                    </div>
+                </div>
+                <div className="col-md-12">
+                    <div className="formitem">
+                        <label>Telefon</label>
+                        <PhoneInputWithCountry international={true} limitMaxLength={true} defaultCountry={countryCode} onCountryChange={code => setCountryCode(code)} style={{ background: "#171717" }} control={control} rules={{ required: true }} name="phone" placeholder={"Telefon"} />
+
+                        <FormError condition={errors.phone}>This field is required</FormError>
+
+                    </div>
+                </div>
+                <div className="col-md-12">
+                    <PrimaryButton onClick={handleSubmit(onSubmit)}>
+                        {buttonText}
+                    </PrimaryButton>
+                </div>
+            </div>
         </div>
+
     );
 }
 

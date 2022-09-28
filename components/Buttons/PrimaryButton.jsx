@@ -1,11 +1,14 @@
 import React from 'react';
 
-const PrimaryButton = ({ children, onClick = (e) => { e.preventDefault() } }) => {
+
+const PrimaryButton = React.forwardRef(({ children, className = "demoaccobtn", onClick = (e) => { } }, ref) => {
     return (
-        <button onClick={onClick} className="def_one_btn">
+        <div ref={ref} onClick={onClick} className={className} style={{ cursor: "pointer" }}>
             {children}
-        </button>
-    );
-}
+        </div>
+    )
+});
+
+PrimaryButton.displayName = "PrimaryButton"
 
 export default PrimaryButton;

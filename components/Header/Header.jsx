@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import PrimaryButton from '../Buttons/PrimaryButton';
 
 const Header = () => {
 
@@ -24,24 +25,12 @@ const Header = () => {
                         <nav>
                             <ul className="nav-list">
                                 <li>
-                                    <Link href="corporate">CORPORATE</Link>
+                                    <Link href="about">CORPORATE</Link>
                                 </li>
-                                <li>
-                                    <a href="#!">ANALYZES</a>
-                                </li>
+
                                 <li>
                                     <Link href="/platform">PLATFORM</Link>
-                                    <ul className="nav-dropdown">
-                                        <li>
-                                            <a href="#!">Test1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Test2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Test3</a>
-                                        </li>
-                                    </ul>
+
 
                                 </li>
 
@@ -62,24 +51,11 @@ const Header = () => {
                         <nav>
                             <ul className="nav-list">
                                 <li>
-                                    <a href="#!">CORPORATE</a>
+                                    <Link href="about">CORPORATE</Link>
                                 </li>
-                                <li>
-                                    <a href="#!">ANALYZES</a>
-                                </li>
+
                                 <li>
                                     <Link href="/platform">PLATFORM</Link>
-                                    <ul className="nav-dropdown">
-                                        <li>
-                                            <a href="#!">Test1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Test2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">Test3</a>
-                                        </li>
-                                    </ul>
 
                                 </li>
                                 <li>
@@ -101,11 +77,14 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <a href="#">
-                            <div className="headcreatbtn">
-                                Hesap Oluştur
-                            </div>
-                        </a>
+                        <Link href={"/register"}>
+                            <a href="#">
+                                <PrimaryButton className={"headcreatbtn"}>
+                                    Hesap Oluştur
+
+                                </PrimaryButton>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

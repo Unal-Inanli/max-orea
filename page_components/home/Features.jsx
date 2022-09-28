@@ -1,26 +1,29 @@
+import { motion } from 'framer-motion';
 import React from 'react';
-
 
 
 const Features = () => {
 
     const features = [
         {
+            title: "Güven",
+            iconName: "/img/guvenicons.svg",
+            text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor`
+        },
+        {
+            title: "Güçlü özsermaye yapısı",
+            iconName: "/img/ozsermayeicon.svg",
+            text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor`
+        },
+        {
+            title: "Deneyim",
+            iconName: "/img/deneyimiconsi.svg",
+            text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor`
+        },
+        {
             title: "Al/Sat Sinyal Servisi",
-            iconName: "al_sat_icon.svg",
-            text: `Uzman analiz ekibimizin anlık AL/SAT önerilerinden cep telefonunuza indirdiğiniz mobil uygulamamız üzerinden yararlanabilirsiniz.`
-        },
-        {
-            title: "Hızlı Para Yatırma/Çekme",
-            iconName: "al_sat_icon.svg",
-            text: `Bu kadar kolay ve sorunsuz para yatırıp çekebileceğinize
-            sizler de inanamayacaksınız.`
-        },
-        {
-            title: "Lisanslı Aracı Kurum",
-            iconName: "al_sat_icon.svg",
-            text: `GLOFSA tarafından yetkilendirilmiş aracı kurum lisansımız
-            ile güvenilir forex hizmeti alacaksınız.`
+            iconName: "/img/alsaticons.svg",
+            text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor`
         }
     ]
 
@@ -31,7 +34,7 @@ const Features = () => {
                     <div className="row">
                         <div className="col-md-5">
                             <div className="sceightimg">
-                                <img src="img/corporate-man-png-6.png" alt="" />
+                                <img src="/img/corporate-man-png-6.png" alt="" />
                             </div>
                         </div>
                         <div className="col-md-7">
@@ -40,42 +43,19 @@ const Features = () => {
                                 <span>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt im komplett verwa.</span>
 
                                 <div className="row">
-                                    <div className="col-md-6">
-                                        <div className="icon">
-                                            <img src="img/guvenicons.svg" alt="" />
-                                        </div>
-                                        <div className="texts">
-                                            <h4>Güven</h4>
-                                            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h6>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="icon">
-                                            <img src="img/ozsermayeicon.svg" alt="" />
-                                        </div>
-                                        <div className="texts">
-                                            <h4>Güçlü özsermaye yapısı</h4>
-                                            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h6>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="icon">
-                                            <img src="img/deneyimiconsi.svg" alt="" />
-                                        </div>
-                                        <div className="texts">
-                                            <h4>Deneyim</h4>
-                                            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h6>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="icon">
-                                            <img src="img/alsaticons.svg" alt="" />
-                                        </div>
-                                        <div className="texts">
-                                            <h4>Al/Sat Sinyal Servisi</h4>
-                                            <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</h6>
-                                        </div>
-                                    </div>
+                                    {features.map((feature, i) => {
+                                        return (
+                                            <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.1 * i }} key={i} viewport={{ once: true }} className="col-md-6">
+                                                <div className="icon">
+                                                    <img src={feature.iconName} alt="" />
+                                                </div>
+                                                <div className="texts">
+                                                    <h4>{feature.title}</h4>
+                                                    <h6>{feature.text}</h6>
+                                                </div>
+                                            </motion.div>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>

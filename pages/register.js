@@ -1,4 +1,5 @@
 import React from 'react';
+import InviteForm from '../components/InviteForm';
 import MainLayout from '../layouts/MainLayout';
 
 const New = () => {
@@ -38,37 +39,7 @@ const New = () => {
                         </div>
                         <div className="col-md-5">
                             <div className="acoo_right">
-                                <div className="formdetail">
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <div className="formitem">
-                                                <label>Adınız</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <div className="formitem">
-                                                <label>Soyadınız</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="formitem">
-                                                <label>E-posta</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="formitem">
-                                                <label>Telefon</label>
-                                                <input type="text" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <button type="submit">Demo Hesap Oluştur</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                <InviteForm buttonText={"Hesap Oluştur"} />
                             </div>
                         </div>
                     </div>

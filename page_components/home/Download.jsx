@@ -19,15 +19,15 @@ const Download = () => {
 
                             <div className="download_bar_home">
                                 <div className="row">
-                                    <div className="col-md-4">
+                                    <motion.div initial={{ translateY: 0 }} whileInView={{ translateY: [0, -30, 0] }} transition={{ duration: 0.4, delay: 0 }} viewport={{ once: true }} className="col-md-4">
                                         <img src="img/google_play.svg" />
-                                    </div>
-                                    <div className="col-md-4">
+                                    </motion.div>
+                                    <motion.div initial={{ translateY: 0 }} whileInView={{ translateY: [0, -30, 0] }} transition={{ duration: 0.4, delay: 0.1 }} viewport={{ once: true }} className="col-md-4">
                                         <img src="img/deskto_play.svg" />
-                                    </div>
-                                    <div className="col-md-4">
+                                    </motion.div>
+                                    <motion.div initial={{ translateY: 0 }} whileInView={{ translateY: [0, -30, 0] }} transition={{ duration: 0.4, delay: 0.2 }} viewport={{ once: true }} className="col-md-4">
                                         <img src="img/app_store.svg" />
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         </div>

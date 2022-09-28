@@ -6,9 +6,9 @@ import Link from 'next/link';
 
 const Hero = () => {
     return (
-        <motion.div initial={{ position: "relative", left: "-10%", opacity: 0 }} whileInView={{ left: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className="head_slider">
+        <div className="head_slider">
             <div className="container">
-                <div className="row">
+                <motion.div initial={{ translateX: -50, opacity: 0 }} whileInView={{ translateX: 0, opacity: 1, transition: { duration: 0.5 } }} viewport={{ once: true }} className="row">
                     <div className="col-md-6">
                         <div className="sc_four_left sctworight">
                             <h3>Zwei flinke Boxer jagen die quirlige Eva und.</h3>
@@ -23,11 +23,13 @@ const Hero = () => {
                                 </div>
                                 <h6>Tam not almış Forex sitesi!</h6>
                             </div>
-                            <a href="#">
-                                <div className="demoaccobtn">
-                                    Create a Demo Account
-                                </div>
-                            </a>
+                            <Link href="/register">
+                                <a>
+                                    <PrimaryButton>
+                                        Hesap Oluştur
+                                    </PrimaryButton>
+                                </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -35,9 +37,9 @@ const Hero = () => {
                             <img src="/img/home_slide_img.png" />
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </motion.div >
+        </div >
     );
 }
 

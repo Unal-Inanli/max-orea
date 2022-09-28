@@ -15,11 +15,10 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-4">
                                 <div className="footer_menu_item">
-                                    <label>Markets</label>
+                                    <label>Bilgiler</label>
                                     <ul>
-                                        <li><Link href="/about">About Us</Link></li>
-                                        <li><a href="#">Why THYFX Ltd. ?</a></li>
-                                        <li><a href="#">Terms & Conditions</a></li>
+                                        <li><Link href="/about">Hakkımızda</Link></li>
+                                        <li><Link href="/privacy">Gizlilik Politıkası</Link></li>
                                     </ul>
                                 </div>
                             </div>

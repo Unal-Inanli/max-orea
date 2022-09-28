@@ -13003,9 +13003,13 @@ a {
 }
 
 .formdetail .formitem {
+	display: flex;
+	flex-flow: column;
 	float: left;
 	width: 100%;
 	margin-bottom: 13px;
+	position: relative;
+
 }
 
 .formdetail .formitem input {
@@ -13047,6 +13051,22 @@ a {
 	font-size: 19px;
 	font-weight: bold;
 	transition: all 0.8s;
+}
+
+.formdetail .demoaccobtn {
+	float: left;
+	width: 100%;
+	color: #fff;
+	background: rgb(31, 31, 31);
+	background: linear-gradient(185deg, rgba(31, 31, 31, 1) 0%, rgba(83, 83, 83, 1) 95%);
+	padding: 15px;
+	border-radius: 3px;
+	border: 0;
+	margin-top: 15px;
+	font-size: 19px;
+	font-weight: bold;
+	transition: all 0.8s;
+	text-align: center;
 }
 
 .formdetail button:hover {
@@ -14095,10 +14115,9 @@ a {
 	right: 0;
 	left: 0;
 	width: 100%;
-	height: 380px;
+	height: 100%;
 	background: rgb(31, 31, 31);
 	background: linear-gradient(185deg, rgba(31, 31, 31, 1) 0%, rgba(83, 83, 83, 1) 95%);
-	transform: skewY(-4deg);
 	transform-origin: top right;
 }
 
@@ -14120,7 +14139,7 @@ a {
 	transform: skewY(105deg);
 	transform-origin: top right;
 	width: 90px;
-	height: 100%;
+	height: 90%;
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -14676,6 +14695,22 @@ a {
 	margin-bottom: 50px;
 }
 
+.homsectionseven__bg {
+	background: url(/img/sectionsevenbg.png);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+width: 50%;
+height: 100%;
+position: absolute;
+right: -70px;
+top: 0;
+background-position: right;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .homsectionseven h4 {
 	float: left;
 	width: 100%;
@@ -14697,18 +14732,6 @@ a {
 	position: relative;
 }
 
-.homsectionseven::after {
-	content: "";
-	background: url(/img/sectionsevenbg.png);
-	width: 50%;
-	height: 100%;
-	position: absolute;
-	right: -70px;
-	top: 0;
-	background-position: right;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 .plat_section_three .plat_two_img {
 	padding: 25px;
@@ -16804,10 +16827,9 @@ nav ul li ul {
 	min-width: 250px;
 	max-width: 400px;
 	width: 100%;
-	background-color: #021421;
+	background-color: #171717;
 	z-index: 10;
 	border: 1px solid;
-	border-color: var(--bs-cyan);
 	border-radius: 10px;
 }
 
@@ -16840,6 +16862,7 @@ nav ul li ul {
 	text-align: right;
 	padding: 0.5rem 1rem;
 	color: white;
+	cursor: pointer;
 }
 
 .bg-dark {
@@ -16850,4 +16873,14 @@ nav ul li ul {
 .main-body {
   display: flex;
   flex-flow: column;
+}
+
+.counter-row {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.counter-row p {
+	margin-bottom: 0;
 }

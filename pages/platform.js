@@ -25,6 +25,8 @@ const Platform = () => {
                 </div>
             </div>
 
+
+
             <div className="plat_section_three">
                 <div className="container">
                     <div className="row">
@@ -44,7 +46,7 @@ const Platform = () => {
                 </div>
             </div>
 
-            <div className="plat_section_two">
+            <div className="plat_section_two" style={{ marginBottom: "0px" }}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
@@ -76,6 +78,7 @@ const Platform = () => {
                     </div>
                 </div>
             </div>
+
         </MainLayout>
     );
 }
